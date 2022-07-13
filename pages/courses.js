@@ -1,6 +1,6 @@
 import Head from "next/head"
 
-const courses = () => {
+const Courses = () => {
   const contents = [
     { "id": "1",
       "image": "https://www.hostinger.com/tutorials/wp-content/uploads/sites/2/2018/11/what-is-html-3.jpg",
@@ -80,4 +80,4 @@ const courses = () => {
   )
 }
 
-export default courses
+export default Courses

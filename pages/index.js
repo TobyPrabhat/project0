@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from "react"
 export default function Home() {
-  const [entry, setEntry] = useState("#");
+  const [entry, setEntry] = useState("/");
   const [error, setError] = useState("");
   const checking = ()=>{
     const email = document.getElementById("email-address").value;
@@ -12,7 +12,6 @@ export default function Home() {
       setEntry("/courses");
     }
     else{
-      setEntry("/");
       if(!email.includes(ng)){
         setError("Email Should Contain @gmail.com");
       }
@@ -44,11 +43,11 @@ export default function Home() {
             </button></Link>
           </div>
           <div className='flex justify-between'>
-          <img src="/football.png" className='w-1/6'/>
-          <img src="/football.png" className='w-1/6'/></div>
+          <img src="/football.png" className='w-1/6'alt = "football"/>
+          <img src="/football.png" className='w-1/6'alt = "football"/></div>
           <div className='flex justify-between'>
-          <img src="/football.png" className='w-1/6'/>
-          <img src="/football.png" className='w-1/6'/></div>
+          <img src="/football.png" className='w-1/6' alt = "football"/>
+          <img src="/football.png" className='w-1/6'alt = "football"/></div>
         </div>
         <div className='lg:w-2/5 sm:h-full bg-white h-3/4'>
           <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">

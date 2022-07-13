@@ -1,8 +1,8 @@
 import Head from "next/head"
 import Link from 'next/link'
 import { useState } from "react"
-function registor() {
-  const [entry, setEntry] = useState("#");
+function Registor() {
+  const [entry, setEntry] = useState("/registor");
   const [error, setError] = useState("");
   const checking = ()=>{
     const usern = document.getElementById("UserName").value;
@@ -13,7 +13,6 @@ function registor() {
       setEntry("/courses");
     }
     else{
-      setEntry("/registor");
       if(usern.length==0){
         setError("Please Enter Your Username");
       }
@@ -39,7 +38,7 @@ function registor() {
             <img
               className="mx-auto h-12 w-auto"
               src="https://images.vexels.com/media/users/3/224233/isolated/lists/d5ee0e9c87bb54cf867d7fb89c4570b8-online-education-logo.png"
-              alt="Workflow"
+              alt="Study Today"
             />
             <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Registor your account</h2>
             <p className="mt-2 text-center text-sm text-gray-600">
@@ -133,4 +132,4 @@ function registor() {
   )
 }
 
-export default registor
+export default Registor
