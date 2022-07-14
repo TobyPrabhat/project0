@@ -44,17 +44,17 @@ const Courses = () => {
         <title>Study Today - Courses</title>
       </Head>
       <div className="flex place-items-center">
-        <img src="https://images.vexels.com/media/users/3/224233/isolated/lists/d5ee0e9c87bb54cf867d7fb89c4570b8-online-education-logo.png" alt="ST" className="md:w-20 w-16"/>
+        <img src="https://images.vexels.com/media/users/3/224233/isolated/lists/d5ee0e9c87bb54cf867d7fb89c4570b8-online-education-logo.png" alt="ST" className="md:w-20 w-16 animate-pulse"/>
         <h2 className="text-bold text-xl">Study <span className="text-yellow-400">Today</span></h2>
       </div>
       <div className="bg-white">
-      <div className="max-w-2xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:max-w-7xl lg:px-8">
+      <div className="max-w-2xl mx-auto py-10 px-4 sm:py-14 sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">Courses To Complete <hr /></h2>
 
         <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
           {contents.map((content) => (
-            <div key={content.id} className="group relative">
-              <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-80 lg:aspect-none">
+            <div key={content.id} className="group relative border-2 py-6 px-3 shadow-xl">
+              <div className="w-full min-h-60 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:h-60 lg:aspect-none shadow-md">
                 <img
                   src={content.image} alt = {content.courseName}
                   className="w-full h-full object-center object-cover lg:w-full lg:h-full"

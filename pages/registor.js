@@ -33,10 +33,10 @@ function Registor() {
         <title>Study Today - Registor</title>
       </Head>
       <div><div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-md w-full space-y-8">
+        <div className="max-w-md w-full space-y-8 border-2 py-12 px-3 shadow-2xl">
           <div>
             <img
-              className="mx-auto h-12 w-auto"
+              className="mx-auto h-14 w-auto animate-pulse"
               src="https://images.vexels.com/media/users/3/224233/isolated/lists/d5ee0e9c87bb54cf867d7fb89c4570b8-online-education-logo.png"
               alt="Study Today"
             />
@@ -118,7 +118,7 @@ function Registor() {
               <Link href={entry}>
               <button onClick={checking}
                 type="submit"
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
               >
                 Registor
               </button>

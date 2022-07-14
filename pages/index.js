@@ -24,37 +24,40 @@ export default function Home() {
     }
   }
   return (
-    <div className='bg-gray-100 h-screen w-screen'>
+    <div className="bg-gray-100 h-screen w-screen">
       <Head>
         <title>Study Today</title>
         <meta content='Make Your Future Secure By Joining Study Today' />
       </Head>
-      <div className='lg:flex h-full w-full  '>
-        <div className="lg:w-3/5 bg-[url('/bg.jpg')] bg-cover sm:h-full bg-center h-3/4">
-          <h1 className='text-white font-bold text-2xl drop-shadow-2xl'>Study <span className='text-yellow-200'>Today</span></h1>
+      <div className="lg:flex h-full w-full">
+        <div className="lg:w-3/5 sm:h-full bg-center h-3/4 bg-[url('/bg.jpg')] bg-cover">
+          <h1 className='text-white font-bold text-2xl drop-shadow-2xl animate-pulse'>Study <span className='text-yellow-200'>Today</span></h1>
           <div className="flex flex-col w-2/3 mx-auto text-center mt-10 place-items-center">
-            <h1 className="text-white font-bold text-4xl w-full mb-4">Welcome To Study Today</h1>
-            <p className="text-white font-bold text-1xl w-full mb-4">Secure Your Future Today By Joining Study Today Courses!</p>
+            <h1 className="text-white font-bold text-4xl w-full mb-4 animate-transo">Welcome To Study Today</h1>
+            <p className="text-white font-bold text-1xl w-full mb-4 animate-opo ">Secure Your Future Today By Joining Study Today Courses!</p>
             <Link href="/registor"><button
               type="submit"
-              className="group relative w-1/4 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+              className="group relative w-1/4 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
             >
               Registor Here
             </button></Link>
           </div>
           <div className='flex justify-between'>
-          <img src="/football.png" className='w-1/6'alt = "football"/>
-          <img src="/football.png" className='w-1/6'alt = "football"/></div>
+          <img src="/football.png" className='w-1/6 animate-bounce'alt = "football"/>
+          <img src="/football.png" className='w-1/6 animate-bounce'alt = "football"/></div>
           <div className='flex justify-between'>
+          <img src="/football.png" className='w-1/6 animate-bounce'alt = "football"/>
+          <img src="/football.png" className='w-1/6 animate-bounce'alt = "football"/></div>
+          {/* <div className='flex justify-between'>
           <img src="/football.png" className='w-1/6' alt = "football"/>
-          <img src="/football.png" className='w-1/6'alt = "football"/></div>
+          <img src="/football.png" className='w-1/6'alt = "football"/></div> */}
         </div>
         <div className='lg:w-2/5 sm:h-full bg-white h-3/4'>
           <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-md w-full space-y-8">
+            <div className="max-w-md w-full space-y-8 border-2 py-12 px-3 shadow-2xl">
               <div>
                 <img
-                  className="mx-auto h-12 w-auto"
+                  className="mx-auto h-14 w-auto animate-pulse"
                   src="https://images.vexels.com/media/users/3/224233/isolated/lists/d5ee0e9c87bb54cf867d7fb89c4570b8-online-education-logo.png"
                   alt="Study Today"
                 />
@@ -122,7 +125,7 @@ export default function Home() {
                   <Link href={entry}>
                   <button onClick={checking}
                     type="submit"
-                    className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110"
                   >
                     Login
                   </button></Link>
